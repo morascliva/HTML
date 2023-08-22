@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>get element by id</title>
+</head>
+<body>
+   <h1 id="myheading">Hello World</h1>
+   <button onclick="handlechange()"> Change Heading</button> 
+
+
+  //javascript.........................................................
+   <script>
+    function handlechange(){
+        
+        var headingElement=document.getElementById("myheading");
+        headingElement.textContent="New Heading Text";
+    }
+   </script>
+</body>
+</html>
+
+
+
+
+
+
+     <!DOCTYPE html>: This is the document type declaration and specifies that the document is an HTML5 document.
+<html lang="en">: This opening tag signifies the beginning of the HTML document, with "en" indicating that the language is English.
+<head>: This section contains metadata about the document, like the title of the page, links to external resources, etc.
+<title>get element by id</title>: Sets the title of the web page, which is usually displayed in the browser's title bar or tab.
+</head>: Closes the head section of the document.
+<body>: This is the main content area of the web page where the visible content is placed.
+<h1 id="myheading">Hello World</h1>: This is an HTML heading element (<h1>) with the text "Hello World". 
+     The id attribute is set to "myheading". The id attribute provides a unique identifier for the element, which can be used to manipulate it in JavaScript.
+<button onclick="handlechange()"> Change Heading</button>: This is a button element that displays the text "Change Heading". 
+     The onclick attribute specifies a JavaScript function (handlechange()) to be executed when the button is clicked.
+
+
+
+
+
+
+
+
+
+
+     <script>: This tag is used to embed JavaScript code within the HTML document.
+function handlechange(){ ... }: This defines a JavaScript function named handlechange. This function is called when the button is clicked.
+var headingElement = document.getElementById("myheading");: This line retrieves the HTML element with the id "myheading". 
+  The document.getElementById() method is used to get a reference to an HTML element by its id.
+headingElement.textContent = "New Heading Text";: This line updates the text content of the selected heading element. It sets the text content to "New Heading Text".
+The overall functionality of the code is that when the button labeled "Change Heading" is clicked, it triggers the handlechange() function.
+  This function finds the <h1> element with the id "myheading" and changes its text content to "New Heading Text".
