@@ -1,0 +1,100 @@
+Inline CSS:
+
+Inline CSS is applied directly within an HTML tag using the style attribute.
+It affects only the specific element it's applied to.
+Example: <p style="color: blue;">This is a blue paragraph.</p>
+
+
+
+
+
+Internal CSS (Embedded CSS):
+
+Internal CSS is defined within the <style> element in the <head> section of an HTML document.
+It applies styles to elements on the same page.
+
+
+<head>
+  <style>
+    p {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <p>This is a green paragraph.</p>
+</body>
+
+
+
+
+External CSS:
+
+External CSS is stored in a separate .css file and linked to the HTML document using the <link> element.
+It allows styles to be shared across multiple HTML pages.
+Example:
+
+
+
+//html
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <p class="blue-text">This is a blue paragraph.</p>
+</body>
+
+
+
+
+//css
+.blue-text {
+  color: blue;
+}
+
+
+
+
+
+Selector Types:
+
+Selectors determine which HTML elements are affected by the styles.
+There are different selector types: element selectors, class selectors, ID selectors, attribute selectors, and more.
+Examples:
+Element Selector: p { color: red; }
+Class Selector: .highlight { background-color: yellow; }
+ID Selector: #header { font-size: 24px; }
+
+
+
+
+
+
+
+
+
+Cascading Order:
+
+CSS stands for "Cascading" Style Sheets, which means styles can be inherited or overridden based on their specificity and the order they're defined.
+Specificity is determined by the type of selector used and the number of selectors.
+Styles that come later in the code can override earlier styles if they have higher specificity.
+
+
+
+
+
+
+
+
+Media Queries:
+
+Media queries are used to apply different styles based on the device's characteristics, such as screen width, height, or orientation.
+They enable creating responsive designs that adapt to various screen sizes.
+Example:
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
