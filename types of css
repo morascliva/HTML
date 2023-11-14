@@ -7,7 +7,6 @@ Example: <p style="color: blue;">This is a blue paragraph.</p>
 
 
 
-
 Internal CSS (Embedded CSS):
 
 Internal CSS is defined within the <style> element in the <head> section of an HTML document.
