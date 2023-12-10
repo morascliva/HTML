@@ -13,6 +13,7 @@ Internal CSS is defined within the <style> element in the <head> section of an H
 It applies styles to elements on the same page.
 
 
+
 <head>
   <style>
     p {
